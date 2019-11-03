@@ -239,11 +239,11 @@ export default class Scrollspy extends React.Component {
     this.onEvent()
   }
 
-  componentWillUnmount () {
+  UNSAFE_componentWillUnmount () {
     this.offEvent()
   }
 
-  componentWillReceiveProps () {
+  UNSAFE_componentWillReceiveProps () {
     this._initFromProps()
   }
 
